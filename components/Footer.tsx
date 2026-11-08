@@ -49,6 +49,9 @@ export function Footer() {
           <Link href="/privacy">Privacy</Link>
           <a href="/docs/Algemene-voorwaarden.docx">Algemene voorwaarden</a>
           <CookieSettingsButton />
+          <a href="https://www.webboostpartner.nl/" target="_blank" rel="noopener noreferrer">
+            Webdesign door Webboostpartner
+          </a>
         </div>
       </div>
     </footer>
