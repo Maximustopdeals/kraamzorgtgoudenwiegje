@@ -111,9 +111,30 @@ export function Navbar() {
                 </Link>
               ))}
             </nav>
-            <TrackedLink href="/contact" event="care_request_click" eventLabel="Mobiel menu" className="button button--gold" onNavigate={() => setOpen(false)}>
-              Kraamzorg aanvragen<ArrowUpRight aria-hidden="true" size={18} />
-            </TrackedLink>
+            
+            {/* Toegevoegde container voor de knoppen in het mobiele menu */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.5rem' }}>
+              <TrackedLink
+                href="https://kraamzorgtgoudenwiegje.mijngeboortezorg.nl/"
+                event="care_request_click"
+                eventLabel="Mobiel menu aanmelden"
+                className="button button--gold"
+                onNavigate={() => setOpen(false)}
+              >
+                Aanmelden <ArrowUpRight aria-hidden="true" size={18} />
+              </TrackedLink>
+              
+              <TrackedLink 
+                href="/contact" 
+                event="care_request_click" 
+                eventLabel="Mobiel menu" 
+                className="button" 
+                onNavigate={() => setOpen(false)}
+              >
+                Kraamzorg aanvragen<ArrowUpRight aria-hidden="true" size={18} />
+              </TrackedLink>
+            </div>
+
             <p>Persoonlijke zorg van één vertrouwd gezicht, bij jou thuis.</p>
           </div>
         </div>
